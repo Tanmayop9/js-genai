@@ -3,6 +3,8 @@
 [![NPM Downloads](https://img.shields.io/npm/dw/%40google%2Fgenai)](https://www.npmjs.com/package/@google/genai)
 [![Node Current](https://img.shields.io/node/v/%40google%2Fgenai)](https://www.npmjs.com/package/@google/genai)
 
+> **Note**: This is a fork with enhanced publishing automation. See [IMPROVEMENTS.md](./IMPROVEMENTS.md) for details on enhancements made to this fork.
+
 ----------------------
 **Documentation:** https://googleapis.github.io/js-genai/
 
