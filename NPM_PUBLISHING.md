@@ -36,6 +36,11 @@ If you want to publish under a different scope (e.g., `@yourusername/genai` inst
 2. Change the `name` field to your desired package name
 3. If using a scoped package, ensure it's set to public access or configure your npm account
 
+**Note on Public Access**: The workflow is configured to publish with `--access public` by default. This is appropriate for open-source packages. If you need to publish a private package:
+- Remove the `--access public` flag from `.github/workflows/npm-publish.yml`
+- Ensure your npm account has a paid subscription that supports private packages
+- Or use GitHub Packages registry instead
+
 ## Publishing Workflow
 
 ### Automated Publishing on Release

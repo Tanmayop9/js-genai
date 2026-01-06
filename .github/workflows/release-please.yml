@@ -13,6 +13,21 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Verify config files
+        run: |
+          if [ ! -f release-please-config.json ]; then
+            echo "Error: release-please-config.json not found"
+            exit 1
+          fi
+          if [ ! -f .release-please-manifest.json ]; then
+            echo "Error: .release-please-manifest.json not found"
+            exit 1
+          fi
+          echo "Config files validated successfully"
+      
       - name: Run Release Please
         uses: googleapis/release-please-action@v4
         id: release
